@@ -14,9 +14,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 375px;
-    height: 900px;
+    height: 1100px;
     justify-content: space-between;
     align-self: center;
+    background-color: hsl(0, 0%, 98%);
 }
 
 .topCard{
@@ -47,7 +48,7 @@ body {
 }
 .topcard_subtitle{
     flex: 1;
-    color: #a3a7ab;
+    color: hsl(229, 6%, 66%);
     font-size: 15px;
     text-align: justify;
 }
@@ -73,11 +74,12 @@ body {
 .card_headline{
     font-weight: 600;
     font-size: 18px;
+    color: hsl(234, 12%, 34%);
 }
 
 .card_headline+div{
     font-weight: 200;
-    color: #a3a7ab;
+    color: hsl(229, 6%, 66%);
     font-size: 15px;
 }
 .cardimg{
@@ -101,6 +103,12 @@ body {
     border-top: 5px solid  hsl(212, 86%, 64%);
 }
 
+@media (min-width: 760px) {
 
+body{
+    flex-direction: row;
+    width: 100%;
+}
+}
 
 
